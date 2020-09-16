@@ -1,0 +1,86 @@
+<div class="bg-primary text-white">
+  <div class="container">
+    <h1 class="display-1 lead" style="text-align:right ">Calculator</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <br>
+      <button type="button" class="btn btn-success" (click)="log()" name="button">Log Expression</button>
+      <br>
+      <br>
+        <h2>Expression</h2>
+      <br>
+      <label><h3>{{data}}</h3></label>
+      <br>
+      <div>
+        <span *ngIf="active">
+          <p class="alert alert-success" > the expression has been calculated succesfully update log !!</p>
+        </span>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click1()" name="button"><h1>1</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click2()" name="button"><h1>2</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click3()" name="button"><h1>3</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click_plus()" name="button"><h1>+</h1></button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click4()" name="button"><h1>4</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click5()" name="button"><h1>5</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click6()" name="button"><h1>6</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click_minus()" name="button"><h1>-</h1></button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click7()" name="button"><h1>7</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click8()" name="button"><h1>8</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click9()" name="button"><h1>9</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click_mul()" name="button"><h1>*</h1></button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click_dot()" name="button"><h1> . </h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click0()" name="button"><h1>0</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click_clear()" name="button"><h1>C</h1></button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="click_div()" name="button"><h1>/</h1></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  </div>
